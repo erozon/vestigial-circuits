@@ -19,6 +19,15 @@ nothing again at convergence — and it is never removed.
 This repository is the measurement layer, not the paper. It exists so that any
 per-run number can be re-derived from the released weights in one command.
 
+## On the use of AI
+
+Claude Code wrote most of the code here — the instruments, the release tooling,
+the figures — and proposed a large share of the measurements they perform. My
+role was closer to a research supervisor's: direction, taste, and judging which
+attempts were worth following.
+
+The paper's "On the use of AI" section says more. Errors are mine.
+
 ## Quickstart
 
 ```bash
