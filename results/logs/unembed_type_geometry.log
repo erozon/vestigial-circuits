@@ -1,0 +1,59 @@
+  Output-side type geometry.  D_c = U[r_c] - U[s_c].
+  common_frac chance reference for unstructured rows ~ 1/n (~0.017 at n=59).
+
+  run                        n cls lin_out |  common mean_cos  min_cos    sv1  sv1~t bias_gap
+  d61_seed2                 61   A    100% |   0.212    0.465    0.288  0.272  0.392      nan
+  d53_seed1                 53   A    100% |   0.212    0.462    0.343  0.235  0.868      nan
+  d63_seed8                 63   A    100% |   0.202    0.456    0.363  0.207  0.991      nan
+  d63_seed2                 63   A    100% |   0.172    0.432    0.238  0.311  0.090      nan
+  d59_30pct_seed1           59   A    100% |   0.167    0.410    0.284  0.180  0.907      nan
+  d51_seed2                 51   A    100% |   0.161    0.404    0.261  0.175  0.964      nan
+  d47_seed8                 47   A    100% |   0.158    0.403    0.244  0.248  0.052      nan
+  d47_seed1                 47   A    100% |   0.146    0.388    0.240  0.277  0.271      nan
+  d47_seed7                 47   A    100% |   0.145    0.383    0.306  0.152  0.779      nan
+  d59_30pct_seed3           59   A    100% |   0.138    0.378    0.264  0.255  0.105      nan
+  d47_seed3                 47   A    100% |   0.133    0.367    0.299  0.200  0.022      nan
+  d59_30pct_seed0           59   A    100% |   0.132    0.363    0.271  0.166  0.245      nan
+  d47_seed9                 47   A    100% |   0.130    0.390    0.181  0.427  0.040      nan
+  d47_seed0                 47   A    100% |   0.127    0.357    0.262  0.161  0.120      nan
+  d61_seed8                 61   A    100% |   0.125    0.366    0.244  0.342  0.029      nan
+  d59_30pct_seed4_resumed   59   A    100% |   0.121    0.350    0.263  0.190  0.211      nan
+  d55_seed2                 55   B     51% |   0.060    0.250    0.137  0.141  0.161      nan
+  d63_seed0                 63   B     50% |   0.027    0.159   -0.085  0.242  0.121      nan
+  d63_seed7                 63   B     62% |   0.022    0.127   -0.370  0.241  0.431      nan
+  d53_seed2                 53   B     48% |   0.018    0.124   -0.373  0.235  0.092      nan
+  d51_seed0                 51   B     50% |   0.018    0.136   -0.096  0.360  0.072      nan
+  d61_seed9                 61   B     45% |   0.016    0.122   -0.169  0.299  0.011      nan
+  d63_seed5                 63   B     69% |   0.016    0.125   -0.098  0.276  0.218      nan
+  d63_seed3                 63   B     69% |   0.013    0.125   -0.316  0.156  0.240      nan
+  d63_seed1                 63   B     51% |   0.011    0.093   -0.285  0.241  0.091      nan
+  d63_seed4                 63   B     70% |   0.010    0.099   -0.116  0.229  0.122      nan
+  d55_seed0                 55   B     57% |   0.010    0.088   -0.465  0.205  0.297      nan
+  d61_seed0                 61   B     49% |   0.009    0.091   -0.307  0.194  0.335      nan
+  d63_seed9                 63   B     56% |   0.008    0.091   -0.165  0.227  0.069      nan
+  d63_seed6                 63   B     57% |   0.008    0.082   -0.307  0.137  0.202      nan
+  d61_seed6                 61   B     60% |   0.006    0.076   -0.256  0.186  0.078      nan
+  d47_seed4                 47   B     52% |   0.006    0.075   -0.215  0.334  0.119      nan
+  d61_seed1                 61   B     58% |   0.004    0.059   -0.264  0.202  0.113      nan
+  d47_seed6                 47   I     88% |   0.123    0.352    0.185  0.184  0.267      nan
+  d61_seed4                 61   I     85% |   0.038    0.196   -0.054  0.224  0.171      nan
+  wrote 35 rows to results/unembed_type_geometry.csv
+
+  by class:
+    A common_frac  mean=0.155 [0.121,0.212]  (k=16)
+    A mean_cos     mean=0.398 [0.350,0.465]  (k=16)
+    A sv1_frac     mean=0.237 [0.152,0.427]  (k=16)
+    B common_frac  mean=0.015 [0.004,0.060]  (k=17)
+    B mean_cos     mean=0.113 [0.059,0.250]  (k=17)
+    B sv1_frac     mean=0.230 [0.137,0.360]  (k=17)
+    I common_frac  mean=0.080 [0.038,0.123]  (k=2)
+    I mean_cos     mean=0.274 [0.196,0.352]  (k=2)
+    I sv1_frac     mean=0.204 [0.184,0.224]  (k=2)
+
+  Pearson against lin_out, on the 35 runs that have it:
+    common_frac  +0.90
+    mean_cos     +0.92
+    sv1_frac     +0.00
+
+  READ: high common/mean_cos in lin-high runs only => output geometry explains the fork.
+        overlapping ranges => it does not.

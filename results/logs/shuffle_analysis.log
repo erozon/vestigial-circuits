@@ -1,0 +1,25 @@
+========================================================================
+LABEL-SHUFFLE CONTROL ANALYSIS  (memorizers: train~1, val~chance)
+model_acc below = accuracy on REAL group products -> must be ~chance
+========================================================================
+
+=== D_59 LABEL-SHUFFLE (memorized)  (model_acc=0.014) ===
+ quad  medConc  %>=0.5  #activeFreq  a0-instab
+   rr    0.133      0%            0      0.023
+   rs    0.134      0%            0      0.022
+   sr    0.133      0%            0      0.023
+   ss    0.134      0%            0      0.023
+  active freqs (rr, clean): []  (0 of 29)
+
+=== D_45 LABEL-SHUFFLE (memorized)  (model_acc=0.009, m=|A|=0) ===
+  rr:   0 clean neurons, k*=[]
+  rs:   0 clean neurons, k*=[]
+  sr:   0 clean neurons, k*=[]
+  ss:   0 clean neurons, k*=[]
+  ACTIVE SET A = []
+  (empty active set -> statistic n/a)
+
+  wrote 8 rows to results/shuffle_control.csv
+
+EXPECTED: both near random-init (no clean tones, ~empty active set),
+model_acc ~chance. Any clean single-tone structure here impeaches the tool.

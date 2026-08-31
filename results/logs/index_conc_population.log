@@ -1,0 +1,59 @@
+  INDEX CONCENTRATION ACROSS THE POPULATION OF RECORD
+
+                                 run   n cls    acc  medConc  %>=0.5  #freq  instab
+                           d47_seed0  47   A  1.000    0.955     95%      5   0.007
+                           d47_seed1  47   A  1.000    0.991     99%      5   0.005
+                           d47_seed3  47   A  1.000    0.983     96%      6   0.006
+                           d47_seed4  47   B  1.000    0.986    100%      6   0.008
+                           d47_seed6  47   I  0.995    0.996    100%      3   0.001
+                           d47_seed7  47   A  1.000    0.973     94%      6   0.009
+                           d47_seed8  47   A  0.999    0.974     94%      3   0.011
+                           d47_seed9  47   A  1.000    0.951     95%      5   0.011
+                           d51_seed0  51   B  0.995    0.980    100%      5   0.003
+                           d51_seed2  51   A  1.000    0.955     93%      7   0.002
+                           d53_seed1  53   A  1.000    0.990     96%      5   0.005
+                           d53_seed2  53   B  1.000    0.969    100%      4   0.001
+                           d55_seed0  55   B  1.000    0.983     98%      8   0.004
+                           d55_seed2  55   B  0.994    0.988    100%      6   0.002
+                     d59_30pct_seed0  59   A  1.000    0.946     92%      7   0.005
+                     d59_30pct_seed1  59   A  1.000    0.989    100%      3   0.006
+                     d59_30pct_seed3  59   A  1.000    0.995     96%      7   0.007
+             d59_30pct_seed4_resumed  59   A  0.997    0.977     97%      7   0.005
+                           d61_seed0  61   B  1.000    0.983     94%      7   0.008
+                           d61_seed1  61   B  1.000    0.867     86%      7   0.010
+                           d61_seed2  61   A  1.000    0.980     99%      3   0.005
+                           d61_seed4  61   I  1.000    0.994    100%      3   0.000
+                           d61_seed6  61   B  1.000    0.978     98%      7   0.002
+                           d61_seed8  61   A  1.000    0.984     97%      7   0.006
+                           d61_seed9  61   B  1.000    0.996    100%      5   0.001
+                           d63_seed0  63   B  1.000    0.994    100%      5   0.000
+                           d63_seed1  63   B  1.000    0.993    100%      4   0.000
+                           d63_seed2  63   A  1.000    0.999     99%      3   0.000
+                           d63_seed3  63   B  1.000    0.972     98%      9   0.009
+                           d63_seed4  63   B  1.000    0.956     93%      5   0.005
+                           d63_seed5  63   B  1.000    0.992    100%      9   0.002
+                           d63_seed6  63   B  1.000    0.947     96%     10   0.003
+                           d63_seed7  63   B  1.000    0.993    100%      7   0.002
+                           d63_seed8  63   A  1.000    0.997     99%      4   0.002
+                           d63_seed9  63   B  1.000    0.987     99%      5   0.004
+
+  wrote 35 rows to results/index_conc_population.csv
+
+  chance reference (random length-n vectors):
+    n=47: mean 0.161  95th pct 0.238
+    n=51: mean 0.154  95th pct 0.235
+    n=53: mean 0.148  95th pct 0.217
+    n=55: mean 0.144  95th pct 0.214
+    n=59: mean 0.137  95th pct 0.204
+    n=61: mean 0.132  95th pct 0.192
+    n=63: mean 0.131  95th pct 0.193
+
+  BY CLASS -- the comparison the paper's answer key rests on
+
+   cls   k            medConc           %>=0.5          #freq
+     A  16      0.978 +- 0.017           96%           5.2
+     B  17      0.974 +- 0.030           98%           6.4
+     I   2      0.995 +- 0.001          100%           3.0
+
+  A - B difference in median concentration: +0.003
+  worst single run in the population: 0.867 (floor for the claim)

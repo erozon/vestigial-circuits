@@ -1,0 +1,43 @@
+  Type-bit ablation at matched VALIDATION ACCURACY, not matched epoch.
+  Target accuracies [0.35, 0.5, 0.7, 0.9], tolerance +-0.05. Chance = 0.50.
+
+  measured d47_seed0 (A)
+  measured d47_seed1 (A)
+  measured d47_seed3 (A)
+  measured d47_seed4 (B)
+  measured d47_seed6 (A)
+  measured d47_seed7 (A)
+  measured d47_seed8 (A)
+  measured d47_seed9 (A)
+  measured d61_seed0 (B)
+  measured d61_seed1 (B)
+  measured d61_seed2 (A)
+  measured d61_seed4 (B)
+  measured d61_seed6 (B)
+  measured d61_seed8 (A)
+  measured d61_seed9 (B)
+  measured d63_seed0 (B)
+  measured d63_seed1 (B)
+  measured d63_seed2 (A)
+  measured d63_seed3 (B)
+  measured d63_seed4 (B)
+  measured d63_seed5 (B)
+  measured d63_seed6 (B)
+  measured d63_seed7 (B)
+  measured d63_seed8 (A)
+  measured d63_seed9 (B)
+  wrote 65 rows to results/matched_acc_bit_ablation.csv
+
+   target cls   k | med epoch    val |   base  surgical   noise |  surg drop  noise drop
+     0.35   A  10 |     21500  0.350 |  0.961     0.646   0.947 |      0.315       0.014
+     0.35   B   9 |     17000  0.344 |  0.884     0.879   0.883 |      0.004       0.001
+     0.50   A   9 |     25000  0.494 |  0.969     0.667   0.952 |      0.302       0.017
+     0.50   B   7 |     17000  0.492 |  0.919     0.914   0.918 |      0.005       0.001
+     0.70   A   8 |     24500  0.702 |  0.980     0.722   0.964 |      0.258       0.017
+     0.70   B   5 |     16000  0.711 |  0.984     0.980   0.983 |      0.004       0.001
+     0.90   A  10 |     26500  0.899 |  0.996     0.786   0.977 |      0.210       0.019
+     0.90   B   7 |     17000  0.890 |  0.990     0.988   0.989 |      0.003       0.001
+
+  The epoch column is the confound this instrument removes: at matched
+  accuracy the classes sit at different epochs. If the surgical drop
+  still separates the classes here, it is not a stage effect.

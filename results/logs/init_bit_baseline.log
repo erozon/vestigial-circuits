@@ -1,0 +1,20 @@
+  Type-direction statistics at INITIALIZATION, no training.
+  30 fresh models per group order, built as src/train.py builds them.
+
+    group   k |  dc_frac mean     max  95th pct |    1/n |  mean_cos     max
+     D_47  30 |        0.0213  0.0263    0.0241 | 0.0213 |    0.1457  0.1611
+     D_51  30 |        0.0193  0.0271    0.0227 | 0.0196 |    0.1384  0.1650
+     D_53  30 |        0.0187  0.0229    0.0214 | 0.0189 |    0.1363  0.1502
+     D_55  30 |        0.0182  0.0217    0.0207 | 0.0182 |    0.1342  0.1474
+     D_59  30 |        0.0172  0.0215    0.0204 | 0.0169 |    0.1306  0.1458
+     D_61  30 |        0.0165  0.0219    0.0204 | 0.0164 |    0.1279  0.1482
+     D_63  30 |        0.0156  0.0179    0.0177 | 0.0159 |    0.1244  0.1333
+  wrote 210 rows to results/init_bit_baseline.csv
+
+  pooled over 210 initializations: dc_frac mean 0.0181, max 0.0271, 99th pct 0.0242
+  epoch 1000 across the dense sweep (k=30): mean 0.0209, range [0.0111, 0.0535]
+  converged class A (k=16): mean 0.1551, range [0.1212, 0.2121]
+  converged class B (k=17): mean 0.0154, range [0.0038, 0.0602]
+
+  READ: if the converged class A range sits far above every one of the 210
+  initializations, the direction is built, not drawn.

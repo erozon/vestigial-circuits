@@ -1,0 +1,9 @@
+run,n,quadrant,med_conc,frac_clean,active_freqs
+d59_shuffle,59,rr,0.132584,0.000000,
+d59_shuffle,59,rs,0.133814,0.000000,
+d59_shuffle,59,sr,0.132626,0.000000,
+d59_shuffle,59,ss,0.134387,0.000000,
+d45_shuffle,45,rr,,,
+d45_shuffle,45,rs,,,
+d45_shuffle,45,sr,,,
+d45_shuffle,45,ss,,,

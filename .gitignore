@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+
+# Figures are build products: instruments/figure_*.py writes them from the
+# committed CSVs. The CSVs are the artifact; the PDFs are one command away.
+figures/
+
+# Where a reader unpacks the released checkpoints, if they put them here.
+runs/

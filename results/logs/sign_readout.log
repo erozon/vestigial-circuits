@@ -1,0 +1,40 @@
+  Type accuracy of sign(t_hat . x), threshold fixed at zero.
+
+  run                        cls  acc_sign0  n_wrong   sep_thr   thr_sd
+  d47_seed0                    A     1.0000        0   -0.7632   -0.042
+  d47_seed1                    A     1.0000        0    8.8872    0.293
+  d47_seed3                    A     1.0000        0   -0.1653   -0.010
+  d47_seed4                    B     0.5167     4270                   
+  d47_seed6                    I     0.6751     2871                   
+  d47_seed7                    A     1.0000        0    0.3124    0.017
+  d47_seed8                    A     1.0000        0    3.1162    0.088
+  d47_seed9                    A     1.0000        0    0.8583    0.046
+  d51_seed0                    B     0.5039     5161                   
+  d51_seed2                    A     1.0000        0    3.0213    0.071
+  d53_seed1                    A     1.0000        0   13.4694    0.235
+  d53_seed2                    B     0.5159     5439                   
+  d55_seed0                    B     0.5078     5956                   
+  d55_seed2                    B     0.5649     5265                   
+  d59_30pct_seed0              A     1.0000        0    3.4388    0.091
+  d59_30pct_seed1              A     1.0000        0   -1.2248   -0.017
+  d59_30pct_seed3              A     1.0000        0   -3.2103   -0.053
+  d59_30pct_seed4_resumed      A     0.9999        1   10.7387    0.256
+  d61_seed0                    B     0.5227     7104                   
+  d61_seed1                    B     0.5030     7397                   
+  d61_seed2                    A     1.0000        0    6.9918    0.159
+  d61_seed4                    I     0.5067     7342                   
+  d61_seed6                    B     0.5047     7372                   
+  d61_seed8                    A     1.0000        0   -0.3964   -0.021
+  d61_seed9                    B     0.5042     7380                   
+  d63_seed0                    B     0.5042     7871                   
+  d63_seed1                    B     0.5273     7504                   
+  d63_seed2                    A     1.0000        0   21.6029    0.377
+  d63_seed3                    B     0.6160     6097                   
+  d63_seed4                    B     0.5000     7938                   
+  d63_seed5                    B     0.5030     7890                   
+  d63_seed6                    B     0.5045     7866                   
+  d63_seed7                    B     0.5162     7681                   
+  d63_seed8                    A     1.0000        0   -0.7521   -0.018
+  d63_seed9                    B     0.5059     7844                   
+
+  wrote 35 rows to results/sign_readout.csv

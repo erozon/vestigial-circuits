@@ -1,0 +1,25 @@
+  1. CLASS A RATE BY GROUP ORDER, with 95% Wilson intervals
+
+    group  trained  gen   A   B   I   rate     95% interval
+     D_47       10    8   6   1   1   0.75     [0.41, 0.93]
+     D_49        3    0   -   -   -      - (none generalized)
+     D_51        3    2   1   1   0   0.50     [0.09, 0.91]
+     D_53        3    2   1   1   0   0.50     [0.09, 0.91]
+     D_55        3    2   0   2   0   0.00     [0.00, 0.66]
+     D_59        5    4   4   0   0   1.00     [0.51, 1.00]
+     D_61       10    7   2   4   1   0.29     [0.08, 0.64]
+     D_63       10   10   2   8   0   0.20     [0.06, 0.51]
+  wrote 8 rows to results/population_rate_by_order.csv
+
+  2. IS THE VARIATION MORE THAN CHANCE? permutation test, 20000 draws
+    intermediates excluded             chi2 = 13.82, p = 0.015  (k = 33)
+    intermediates counted as non-A     chi2 = 12.72, p = 0.029  (k = 35)
+
+  3. ORDER, OR TIME TO GROK? within-order AUC of grok epoch -> class
+      group  nA  nB  median A  median B    AUC
+       D_47   6   2     44000     34000   0.75
+       D_61   2   5     22000     19000   0.60
+       D_63   2   8     23000     17000   0.88
+    mean within-order AUC = 0.74 (0.5 = grok time says nothing about class)
+
+  wrote 3 rows to results/population_grok_time_by_order.csv

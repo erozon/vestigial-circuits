@@ -1,0 +1,85 @@
+  ...d47_seed0                A base=1.00 override=  97.8 lin_out=  100%
+  ...d47_seed1                A base=1.00 override=  99.8 lin_out=  100%
+  ...d47_seed3                A base=1.00 override=  94.8 lin_out=  100%
+  ...d47_seed4                B base=1.00 override=  -8.7 lin_out=   52%
+  ...d47_seed6                I base=1.00 override=  -9.0 lin_out=   88%
+  ...d47_seed7                A base=1.00 override=  -2.1 lin_out=  100%
+  ...d47_seed8                A base=1.00 override= -10.2 lin_out=  100%
+  ...d47_seed9                A base=1.00 override=  85.7 lin_out=  100%
+  ...d51_seed0                B base=1.00 override=   4.1 lin_out=   50%
+  ...d51_seed2                A base=1.00 override=   4.6 lin_out=  100%
+  ...d53_seed1                A base=1.00 override=  97.2 lin_out=  100%
+  ...d53_seed2                B base=1.00 override=  -0.0 lin_out=   48%
+  ...d55_seed0                B base=1.00 override=  -0.2 lin_out=   57%
+  ...d55_seed2                B base=1.00 override=  -1.5 lin_out=   51%
+  ...d59_30pct_seed0          A base=1.00 override=  99.2 lin_out=  100%
+  ...d59_30pct_seed1          A base=1.00 override=  84.1 lin_out=  100%
+  ...d59_30pct_seed3          A base=1.00 override=  78.2 lin_out=  100%
+  ...d59_30pct_seed4_resumed  A base=1.00 override=  77.5 lin_out=  100%
+  ...d61_seed0                B base=1.00 override=  23.2 lin_out=   49%
+  ...d61_seed1                B base=1.00 override=   2.0 lin_out=   58%
+  ...d61_seed2                A base=1.00 override=  85.6 lin_out=  100%
+  ...d61_seed4                I base=1.00 override= -23.7 lin_out=   85%
+  ...d61_seed6                B base=1.00 override=  -1.3 lin_out=   60%
+  ...d61_seed8                A base=1.00 override=  88.0 lin_out=  100%
+  ...d61_seed9                B base=1.00 override=  -0.8 lin_out=   45%
+  ...d63_seed0                B base=1.00 override=  -7.1 lin_out=   50%
+  ...d63_seed1                B base=1.00 override=   1.1 lin_out=   51%
+  ...d63_seed2                A base=1.00 override=  90.1 lin_out=  100%
+  ...d63_seed3                B base=1.00 override=   1.0 lin_out=   69%
+  ...d63_seed4                B base=1.00 override=   2.2 lin_out=   70%
+  ...d63_seed5                B base=1.00 override=   8.6 lin_out=   69%
+  ...d63_seed6                B base=1.00 override=  -0.3 lin_out=   57%
+  ...d63_seed7                B base=1.00 override=   2.0 lin_out=   62%
+  ...d63_seed8                A base=1.00 override=  67.7 lin_out=  100%
+  ...d63_seed9                B base=1.00 override=   4.1 lin_out=   56%
+
+  run                        n cls      type override lin_out lin_op1 lin_op2
+  d47_seed0                 47   A     prime     97.8    100%     99%     98%
+  d47_seed1                 47   A     prime     99.8    100%     98%     98%
+  d47_seed3                 47   A     prime     94.8    100%     96%     88%
+  d47_seed7                 47   A     prime     -2.1    100%     92%     94%
+  d47_seed8                 47   A     prime    -10.2    100%     95%     95%
+  d51_seed2                 51   A composite      4.6    100%     99%     98%
+  d53_seed1                 53   A     prime     97.2    100%     88%     93%
+  d59_30pct_seed0           59   A     prime     99.2    100%     99%     97%
+  d59_30pct_seed1           59   A     prime     84.1    100%     96%     95%
+  d59_30pct_seed3           59   A     prime     78.2    100%     98%     98%
+  d59_30pct_seed4_resumed   59   A     prime     77.5    100%     88%     85%
+  d61_seed2                 61   A     prime     85.6    100%     95%     95%
+  d61_seed8                 61   A     prime     88.0    100%     97%     98%
+  d63_seed2                 63   A composite     90.1    100%     90%     91%
+  d63_seed8                 63   A composite     67.7    100%     87%     86%
+  d47_seed9                 47   A     prime     85.7    100%     99%     98%
+  d47_seed6                 47   I     prime     -9.0     88%     83%     82%
+  d61_seed4                 61   I     prime    -23.7     85%     90%     91%
+  d63_seed4                 63   B composite      2.2     70%    100%    100%
+  d63_seed5                 63   B composite      8.6     69%     88%     88%
+  d63_seed3                 63   B composite      1.0     69%     95%     92%
+  d63_seed7                 63   B composite      2.0     62%     92%     90%
+  d61_seed6                 61   B     prime     -1.3     60%     98%     98%
+  d61_seed1                 61   B     prime      2.0     58%     98%     97%
+  d63_seed6                 63   B composite     -0.3     57%     96%     93%
+  d55_seed0                 55   B composite     -0.2     57%     92%     89%
+  d63_seed9                 63   B composite      4.1     56%     94%     94%
+  d47_seed4                 47   B     prime     -8.7     52%     88%     87%
+  d55_seed2                 55   B composite     -1.5     51%     66%     67%
+  d63_seed1                 63   B composite      1.1     51%     97%     89%
+  d63_seed0                 63   B composite     -7.1     50%     91%     91%
+  d51_seed0                 51   B composite      4.1     50%     81%     78%
+  d61_seed0                 61   B     prime     23.2     49%    100%     91%
+  d53_seed2                 53   B     prime     -0.0     48%     93%    100%
+  d61_seed9                 61   B     prime     -0.8     45%     88%     96%
+  wrote 35 rows to results/lin_out_all_seeds.csv
+
+  n_grokked=35   lin_out>=90: 16   lin_out<=60: 12   60<mid<90: 7
+  lin_out distribution: [ 45.  48.  49.  50.  50.  51.  51.  52.  56.  57.  57.  58.  60.  62.
+  69.  69.  70.  85.  88. 100. 100. 100. 100. 100. 100. 100. 100. 100.
+ 100. 100. 100. 100. 100. 100. 100.]
+  bimodal (gap, mid~0) => fork real on real population.  spread => continuum.
+
+   cls   k  lin_out mean    min    max
+     A  16        100.0%   100%   100%
+     B  17         56.1%    45%    70%
+     I   2         86.5%    85%    88%
+  runs where lin_out contradicts the label: [('d63_seed4', 'B', 70.35481929779053), ('d63_seed5', 'B', 69.07411217689514), ('d63_seed3', 'B', 68.96913647651672), ('d63_seed7', 'B', 62.229686975479126), ('d61_seed6', 'B', 60.30004620552063)]

@@ -1,0 +1,39 @@
+  Removing the type bit at EARLY checkpoints, before the models can multiply.
+  base / surgical (bit removed) / noise (same magnitude, bit intact). Chance = 0.50.
+
+  measured d47_seed0 (A)
+  measured d47_seed1 (A)
+  measured d47_seed3 (A)
+  measured d47_seed4 (B)
+  measured d47_seed6 (A)
+  measured d47_seed7 (A)
+  measured d47_seed8 (A)
+  measured d47_seed9 (A)
+  measured d61_seed0 (B)
+  measured d61_seed1 (B)
+  measured d61_seed2 (A)
+  measured d61_seed4 (B)
+  measured d61_seed6 (B)
+  measured d61_seed8 (A)
+  measured d61_seed9 (B)
+  measured d63_seed0 (B)
+  measured d63_seed1 (B)
+  measured d63_seed2 (A)
+  measured d63_seed3 (B)
+  measured d63_seed4 (B)
+  measured d63_seed5 (B)
+  measured d63_seed6 (B)
+  measured d63_seed7 (B)
+  measured d63_seed8 (A)
+  measured d63_seed9 (B)
+  wrote 100 rows to results/early_bit_ablation.csv
+
+    epoch cls   k |   base  surgical   noise |  surg drop  noise drop
+     3000   A  11 |  0.723     0.647   0.721 |      0.077       0.002
+     3000   B  14 |  0.649     0.652   0.649 |     -0.003       0.000
+     5000   A  11 |  0.782     0.634   0.777 |      0.148       0.005
+     5000   B  14 |  0.657     0.658   0.656 |     -0.001       0.001
+     7000   A  11 |  0.846     0.625   0.840 |      0.221       0.006
+     7000   B  14 |  0.674     0.675   0.673 |     -0.001       0.000
+     9000   A  11 |  0.905     0.615   0.897 |      0.289       0.008
+     9000   B  14 |  0.727     0.726   0.726 |      0.002       0.001
